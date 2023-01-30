@@ -44,10 +44,14 @@ header .container::before {
   bottom: 0px;
   background-color: #a2a2a2ff;
 }
-header img {
+header .container > a img {
   height: 50px;
   position: absolute;
   left: 0;
+}
+header .container > a  {
+  display: flex;
+    align-items: center;
 }
 header nav {
   display: flex;
@@ -88,14 +92,13 @@ header ul {
   }
   header .container {
     width: 100%;
-    padding: 20px 15px;
+    padding: 19px 15px;
   }
   header nav {
   position: unset;
   }
   header ul {
     position: absolute;
-    flex-direction: column;
     top: 100%;
     background-color: rgba(0, 0, 0, 50%);
     width: 100%;
@@ -116,8 +119,10 @@ header ul {
     right: 70px;
     font-size: 20px;
   }
+  
   header i:hover + nav ul {
     display: flex;
+    flex-direction: column;
   }
 }
 header nav .form  {
@@ -185,7 +190,7 @@ header ul a {
 @media (max-width: 320px) {
   .landing .content {
     width: 70% !important;
-    height: 85% !important;
+    height: 100% !important;
     left: 50%;
     transform: translate(-50% , -50%) !important;
     top: 50% !important;
@@ -198,7 +203,7 @@ header ul a {
   }
   .text-layout {
     width: 100% !IMPORTANT;
-    height: 60% !important;
+    height: 50% !important;
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
