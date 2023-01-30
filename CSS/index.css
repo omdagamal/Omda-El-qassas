@@ -44,13 +44,14 @@ header .container::before {
   bottom: 0px;
   background-color: #a2a2a2ff;
 }
-header img {
+header  img {
   height: 50px;
   position: absolute;
   left: 0;
 }
 header .container > a  {
-
+  display: flex;
+    align-items: center;
 }
 header nav {
   display: flex;
@@ -120,7 +121,7 @@ header ul {
     font-size: 20px;
   }
   
-  header i:hover + nav ul li {
+  header nav ul:hover {
     display: block;
   }
   header i:hover + nav ul {
