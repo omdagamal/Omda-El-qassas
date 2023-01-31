@@ -20,6 +20,18 @@ ul {
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #FFF;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(25, 202, 250 , 50%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
 /* start header */
 header {
   width: 100%;
